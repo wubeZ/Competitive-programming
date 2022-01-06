@@ -1,7 +1,6 @@
 class Solution:
     def getHint(self, secret: str, guess: str) -> str:
-        x = 0
-        y = 0
+        x = y = 0
         secret_list = list(secret)
         guess_list = list(guess)
         length = len(secret_list)
@@ -16,5 +15,5 @@ class Solution:
                 y += 1
                 secret_list.remove(j)
                 
-        return str(x)+"A"+str(y)+"B"
+        return str(x) + "A" + str(y) + "B"
         
