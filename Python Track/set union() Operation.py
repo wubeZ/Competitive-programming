@@ -1,5 +1,0 @@
-n = int(input())
-nums =  set(map(int,input().split()))
-b = int (input())
-nums2 = set(map(int,input().split()))
-print(len(nums2.union(nums)))
