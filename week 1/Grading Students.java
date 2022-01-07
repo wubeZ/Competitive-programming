@@ -12,13 +12,6 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    /*
-     * Complete the 'gradingStudents' function below.
-     *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts INTEGER_ARRAY grades as parameter.
-     */
-
     public static List<Integer> gradingStudents(List<Integer> grades) {
      ArrayList<Integer> round = new ArrayList<Integer>();
      int num = grades.size();
@@ -30,7 +23,6 @@ class Result {
            grade = grade - (grade%5);
            grade +=5;
            round.add(grade);}
-
       else{
           round.add(grade);
          }
