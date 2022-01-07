@@ -1,0 +1,5 @@
+N = int(input())
+nums = list(map(int,input().split()))
+positveNum = list(map(lambda x: x > 0,nums))
+palindromicNum = list(map(lambda x:str(x) == str(x)[::-1],nums))
+print(all(positveNum) and any(palindromicNum))
