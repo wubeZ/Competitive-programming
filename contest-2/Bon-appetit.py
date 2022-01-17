@@ -8,11 +8,9 @@ import sys
 
 def bonAppetit(bill, k, b):
     sumcount = 0
-    m = 0
     for i,j in enumerate(bill):
         if i != k:
             sumcount += j
-            m += 1
     if (sumcount//2) == b:
         print("Bon Appetit")
     else:
