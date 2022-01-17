@@ -8,16 +8,14 @@ import sys
 from collections import Counter 
 
 def repeatedString(s, n):
-    ans = Counter(s)
-    count = 0
-    remcount = 0
-    maxcount = 0
-    count = (n//len(s))*ans["a"]
+    ans = s.count("a")
+    count , remainder = 0
+    count = (n//len(s))*ans
     for i in range(n%len(s)):
        if s[i] == "a":
-            remcount += 1
-    maxcount = count + remcount
-    return maxcount
+            remainder += 1
+    count = count + remainder
+    return count
     
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
